@@ -73,11 +73,7 @@ const getUserByEmail = email => {
 
 const getAllUsers = () => {
 	try {
-		const users = readFile(filePath);
-		users.forEach(user => {
-			delete user.password;
-		});
-		return users;
+		return readFile(filePath);
 	} catch (err) {
 		console.log("Error getting all users:", err);
 		return [];

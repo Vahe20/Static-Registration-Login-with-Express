@@ -133,7 +133,18 @@ app.post("/api/login", (req, res) => {
 });
 
 app.get("/api/users", (_, res) => {
-	const users = getAllUsers();
+	const users = getAllUsers().map(user => ({
+		fullName: user.fullName,
+		email: user.email,
+		imageURL: user.imageURL,
+		college: user.college,
+		hobby: user.hobby,
+		phone: user.phone,
+		age: user.age,
+		city: user.city,
+		github: user.github,
+		bio: user.bio,
+	}));
 	return res.status(200).json({ ok: true, users });
 });
 
