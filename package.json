@@ -1,0 +1,27 @@
+{
+  "name": "static-registration-login-with-express",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Vahe20/Static-Registration-Login-with-Express#readme",
+  "bugs": {
+    "url": "https://github.com/Vahe20/Static-Registration-Login-with-Express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vahe20/Static-Registration-Login-with-Express.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.11"
+  }
+}
